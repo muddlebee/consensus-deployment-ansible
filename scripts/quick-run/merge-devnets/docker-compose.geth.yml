@@ -22,4 +22,5 @@ services:
       --datadir=/execution_data --networkid=$NETWORK_ID --catalyst --http
       --http.api "engine,net,eth" --ws --ws.api "engine,net,eth" --allow-insecure-unlock
       --nat extip:$IP_ADDRESS --bootnodes=$ENODE
+      --metrics
     network_mode: host

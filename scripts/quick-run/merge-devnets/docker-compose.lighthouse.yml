@@ -12,4 +12,5 @@ services:
       --enr-udp-port 9000 --enr-tcp-port 9000 --eth1 --boot-nodes=$ENR --http --http-port=4000
       --merge --http-allow-sync-stalled --disable-packet-filter
       --execution-endpoints=http://127.0.0.1:8545 --terminal-total-difficulty-override=$TOTAL_TERMINAL_DIFFICULTY
+      --metrics
     network_mode: host
