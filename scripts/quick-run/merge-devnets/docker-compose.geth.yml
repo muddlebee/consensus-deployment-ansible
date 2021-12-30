@@ -24,3 +24,5 @@ services:
       --nat extip:$IP_ADDRESS --bootnodes=$ENODE
       --metrics
     network_mode: host
+    extra_hosts:
+      - "host.docker.internal:host-gateway"
