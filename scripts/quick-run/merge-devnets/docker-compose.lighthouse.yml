@@ -13,6 +13,8 @@ services:
       --merge --http-allow-sync-stalled --disable-packet-filter
       --execution-endpoints=http://127.0.0.1:8545 --terminal-total-difficulty-override=$TOTAL_TERMINAL_DIFFICULTY
       --metrics
+    expose:
+     - 5054
     network_mode: host
 
 networks: 
